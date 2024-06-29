@@ -1,0 +1,31 @@
+/* The following block can be included in a custom.scss */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+/* make the customizations */
+$theme-colors: (
+    "primary":  rgb(90, 83, 119),
+    "secondary": $secondary,
+    "success": rgb(124, 123, 126),
+    "info": rgb(74, 71, 85),
+    "warning": $warning,
+    "danger": rgb(214, 145, 177),
+    "light": $light,
+    "dark": $dark
+);
+
+$body-bg-dark: rgb(137, 132, 156);
+$body-secondary-bg-dark: rgb(91, 87, 109);
+$body-tertiary-bg-dark: rgb(40, 37, 54);
+
+/* import bootstrap to set changes */
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+.create-todo-card {
+    background-color: $body-tertiary-bg-dark;
+
+    .form-control {
+        color: black;
+    }
+}

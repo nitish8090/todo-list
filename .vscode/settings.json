@@ -1,0 +1,19 @@
+{
+    "python.testing.debugPort": 3000,
+    "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "commands": ["cd backend", "python manage.py runserver"]
+        },
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "commands": ["cd frontend", "npm run dev"],
+        }
+      ]
+    }
+  ]
+}

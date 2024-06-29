@@ -1,0 +1,1 @@
+docker run -v .:/app -it todo-backend bash
